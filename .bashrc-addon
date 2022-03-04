@@ -1,0 +1,8 @@
+# Note:
+# You, yes you, whos copying these lines, paste them
+# on /etc/profile if you want to apply this config to
+# system wide users, or paste into .bashrc if you want
+# it only during your sessions.
+
+# Favorite prompt style (2nd after oh-my-zsh)
+PS1="<\[\033[1;32m\]\u@\h\[\033[00m\]:\[\033[1;34m\]\w\[\033[00m\]> \[\033[1;35m\]\@\$\[\033[00m\] "
