@@ -6,3 +6,16 @@
 
 # Favorite prompt style (2nd after oh-my-zsh)
 export PS1="<\[\033[1;32m\]\u@\h\[\033[00m\]:\[\033[1;34m\]\w\[\033[00m\]> \[\033[1;35m\]\@\$\[\033[00m\] "
+
+########################################################
+##################### WSL2 only ########################
+########################################################
+
+# fix: Recordar el passphrase de las llaves de cifrado de Github
+# con keychain
+/usr/bin/keychain --nogui ~/.ssh/id_ed25519_github
+source $HOME/.keychain/$(hostname)-sh
+
+# fix: Exportando variable de entorno para reparar fallo de GPG
+# y poder firmar commits
+export GPG_TTY=$(tty) 
